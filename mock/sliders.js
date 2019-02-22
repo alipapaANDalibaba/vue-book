@@ -1,0 +1,1 @@
+module.exports = ['//m.360buyimg.com/mobilecms/s750x366_jfs/t1/26774/17/7532/67734/5c6d3487Ed5b7088a/9e0b5fe445382966.jpg!cr_1125x549_0_72!q70.jpg.dpg','//m.360buyimg.com/mobilecms/s750x366_jfs/t1/27867/33/7683/97611/5c6e0e34E5bf53c34/e747ca3c9dc45fae.jpg!cr_1125x549_0_72!q70.jpg.dpg']

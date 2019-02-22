@@ -1,11 +1,22 @@
 <template>
     <div>
-      <MHeader></MHeader>
+      <MHeader :back="true">首页</MHeader>
+      <div class="content">
+        <Swiper></Swiper>
+        <Swiper></Swiper>
+        <Swiper></Swiper>
+        <Swiper></Swiper>
+        <Swiper></Swiper>
+        <Swiper></Swiper>
+        <Swiper></Swiper>
+        <Swiper></Swiper>
+      </div>
     </div>
 
 </template>
 <script>
 import MHeader from '../base/MHeader'
+import Swiper from '../base/swiper'
 export default {
   data() {
     return {}
@@ -13,7 +24,7 @@ export default {
   methods: {},
   computed: {},
   components: {
-    MHeader
+    MHeader,Swiper
   }
 }
 </script>

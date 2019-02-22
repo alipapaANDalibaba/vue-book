@@ -8,11 +8,6 @@
 <script>
   import Tab from './base/Tab'
   export default {
-    data() {
-      return {}
-    },
-    methods: {},
-    computed: {},
     components: {
         Tab
     }
@@ -34,5 +29,14 @@
     outline: none;
     color: lightseagreen;
   }
-
+  input,button{
+    -webkit-appearance: none;
+  }
+  .content{
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    bottom: 50px;
+    overflow: auto;
+  }
 </style>

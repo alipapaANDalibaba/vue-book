@@ -1,10 +1,9 @@
 <template>
     <div class="tabBox">
-
-      <router-link to="/home">首页</router-link>
-      <router-link to="/list">列表页</router-link>
-      <router-link to="/collect">收藏</router-link>
-      <router-link to="/add">添加</router-link>
+      <router-link to="/home"><i class="iconfont">&#xe64c;</i><span>首页</span></router-link>
+      <router-link to="/list"><i class="iconfont">&#xe609;</i><span>列表页</span></router-link>
+      <router-link to="/collect"><i class="iconfont">&#xe61d;</i><span>收藏</span></router-link>
+      <router-link to="/add"><i class="iconfont">&#xe621;</i><span>添加</span></router-link>
     </div>
 </template>
 <script>
@@ -21,20 +20,27 @@
 </script>
 <style scoped>
   .tabBox{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     height: 50px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    border-top: 1px solid #EEEEEE;
   }
   .tabBox a{
     flex: 1;
     text-align: center;
-    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tabBox a i{
+    font-size: 25px;
+  }
+  .tabBox a span{
+    font-size: 12px;
   }
   .tabBox .router-link-active{
     color: red;

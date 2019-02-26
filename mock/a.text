@@ -1,0 +1,30 @@
+[
+  {
+    "bookCover":"https://img14.360buyimg.com/n7/jfs/t9508/97/2285719018/62961/99c5b1b7/59f299b4Nc9e78adb.jpg",
+    "bookName": "Vue.js实战",
+    "bookInfo": "码农开学正当时，时不我待劲争锋，科技IT每满100减50快来抢购！",
+    "bookPrice": 78.2,
+    "bookId": 1
+  },
+  {
+    "bookCover":"https://img11.360buyimg.com/n7/jfs/t1/19709/14/2822/206853/5c21adb6E7c9bb79e/5b840bc23c3ed2dc.jpg",
+    "bookName": "Vue.js项目实战",
+    "bookInfo": "码农开学正当时，时不我待劲争锋，科技IT每满100减50快来抢购！",
+    "bookPrice": 54.5,
+    "bookId": 2
+  },
+  {
+    "bookCover":"https://img14.360buyimg.com/n7/jfs/t3049/211/1135504925/129375/cc072102/57c6862aN329b23fd.jpg",
+    "bookName": "Vue.js权威指南",
+    "bookInfo": "码农开学正当时，时不我待劲争锋，科技IT每满100减50快来抢购！",
+    "bookPrice": 99.0,
+    "bookId": 3
+  },
+  {
+    "bookCover":"https://img14.360buyimg.com/n7/jfs/t1/7311/2/7919/337148/5c09dfdcEc928c9d7/1fb356f338fd88c5.jpg",
+    "bookName": "Vue.js快跑",
+    "bookInfo": "码农开学正当时，时不我待劲争锋，科技IT每满100减50快来抢购！",
+    "bookPrice": 55.0,
+    "bookId": 4
+  }
+]

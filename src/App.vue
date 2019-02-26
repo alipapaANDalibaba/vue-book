@@ -1,6 +1,14 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <!--keep-alive:是Vue的内置组件，能在组件切换过程中将状态保留在内存中，防止重复渲染DOM。-->
+    <transition name="fadeIn">
+      <keep-alive>
+        <router-view v-if="$route.meta.requireLive"></router-view>
+      </keep-alive>
+    </transition>
+    <transition name="fadeIn">
+      <router-view v-if="!$route.meta.requireLive"></router-view>
+    </transition>
     <Tab></Tab>
   </div>
 </template>
@@ -38,5 +46,15 @@
     top: 40px;
     bottom: 50px;
     overflow: auto;
+  }
+  .fadeIn-enter{
+    opacity: 0;
+  }
+  .fadeIn-enter-active{
+    transition: all 0.3s linear;
+  }
+  .fadeIn-leave-active{
+    transition: all 0.3s linear;
+    opacity: 0;
   }
 </style>

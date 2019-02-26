@@ -2,21 +2,28 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 
-import home from '../components/Home'
-import list from '../components/List'
-import collect from '../components/Collect'
-import add from '../components/Add'
-import detail from '../components/Detail'
+import Home from '../components/Home'
+import List from '../components/List'
+import Collect from '../components/Collect'
+import Add from '../components/Add'
+import Detail from '../components/Detail'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     //注册路由
-    {path:'/home',component:home},
-    {path:'/list',component:list},
-    {path:'/collect',component:collect},
-    {path:'/add',component:add},
-    {path:'/detail',component:detail},
+    {path:'/',redirect:'/home'},
+    {
+      path:'/home',
+      component:Home,
+      meta:{requireLive:true}
+      },
+    {path:'/list',component:List},
+    {path:'/collect',component:Collect},
+    {path:'/add',component:Add},
+    //   /detail/1  {bid:1} 路径参数，必须有但是可以随机
+    {path:'/detail/:bid',component:Detail,name:'details'},
+    {path:'*',redirect:'/home'},
   ]
 })

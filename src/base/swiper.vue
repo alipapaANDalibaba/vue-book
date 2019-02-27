@@ -14,11 +14,9 @@
     data() {
       return {
         swiperOption: {
-          autoplay:3500,
+          // autoplay:3500,
           setWrapperSize:true,
-          pagination: {
-            el: '.swiper-pagination'
-          }
+          pagination: '.swiper-pagination',
         },
       }
     }
@@ -29,4 +27,5 @@
   img{
     width: 100%;
   }
+
 </style>

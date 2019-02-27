@@ -57,4 +57,8 @@
     transition: all 0.3s linear;
     opacity: 0;
   }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #FFFFFF;
+  }
 </style>

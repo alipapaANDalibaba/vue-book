@@ -12,7 +12,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "vue": "^2.5.2",
-    "vue-awesome-swiper": "^2.5.4",
+    "vue-awesome-swiper": "^2.6.7",
+    "vue-lazyload": "^1.2.6",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

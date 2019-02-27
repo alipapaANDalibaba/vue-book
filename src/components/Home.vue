@@ -74,4 +74,5 @@ export default {
   .bookList ul li b{
     font-size: 14px;
   }
+
 </style>

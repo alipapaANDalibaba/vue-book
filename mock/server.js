@@ -1,9 +1,9 @@
 let http = require('http'),
   fs = require('fs'),
-  url = require('url'),
+  url = require('url'),//
   path = require('path');
-let sliders = require('./sliders');
 
+let sliders = require('./sliders');
 //读取book.json
 function read(cb) {
   fs.readFile(path.join(__dirname, './book.json'), 'utf-8', function (err, data) {
@@ -31,15 +31,13 @@ http.createServer((req, res) => {
   let {pathname, query} = url.parse(req.url, true);//不加true query就不是对象
   if (pathname === '/sliders') {
     res.setHeader('Content-Type', 'application/json;charset=utf-8');
-    return res.end(JSON.stringify(sliders))
+    return res.end(JSON.stringify(sliders))//将对象转为json格式(字符串)
   }
   if (pathname === '/hot') {
     read(function (books) {//代表所有读出的结果
       let hot = books.reverse().slice(0, 6);
       res.setHeader('Content-Type', 'application/json;charset=utf-8');
-      setTimeout(() => {
-        res.end(JSON.stringify(hot));
-      }, 2000);
+      res.end(JSON.stringify(hot));
     })
     return
   }

@@ -29,3 +29,9 @@ npm install stylus stylus-loader axios vuex
    - 默认给5条，前端告诉后台从现在开始要从第几条给我
    - /page?offset=5
    - 后台返回时需要告诉前端是否有更多的数据hasMore:false
+
+###代码分割
+   - 跳转页面时分别加载需要跳转页面的数据
+   - 用 component:()=>import('../components/Home.vue')的方式注册路由
+
+

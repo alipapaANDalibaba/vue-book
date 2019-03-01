@@ -16,9 +16,19 @@ Vue.use(VueLazyload, {
   attempt: 1
 })
 
-
 Vue.config.productionTip = false
 
+//在进入路由之前，每一次都会执行此方法
+router.beforeEach(function(to,from,next){
+  document.title = to.meta.title;
+  if(to.path === '/list'){
+    // next({path:'/add'});
+    next();
+  }else{
+    next();
+  }
+
+})
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
